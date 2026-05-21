@@ -10,7 +10,7 @@ import tshirt5 from "@/assets/Copa05.png";
 import tshirt13 from "@/assets/Copa06.png";
 import tshirt14 from "@/assets/Copa07.png";
 import tshirt15 from "@/assets/Copa08.png";
-import HeroCopa from "@/assets/HeroCopa.png";
+import HeroCopa from "@/assets/HeroAdesivo.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
 import AtividadeImage from "@/assets/Atividades.png";
@@ -320,7 +320,7 @@ const Index = () => {
         <section className="py-6 mt-4">
           <div className="bg-[#cc0000] -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
-              🎁 Além das <strong>300 Atividades</strong>, ao adquirir o <br />
+              🎁 Além das <strong>300 Artes</strong>, ao adquirir o <br />
               Plano Completo você vai levar <strong>6 SUPER BÔNUS!</strong>
             </p>
             

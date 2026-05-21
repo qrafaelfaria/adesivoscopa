@@ -2,21 +2,14 @@ import { useEffect, useMemo, useState, useRef } from "react";
 import { Play, Check, X, ChevronDown, ChevronsDown, Flame, Clock, ShieldCheck, Zap, BookOpen, Trophy, Crown, Library, Dices, Palette, Type, CheckSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import tshirt1 from "@/assets/Atividade01.png";
-import tshirt2 from "@/assets/Atividade02.png";
-import tshirt3 from "@/assets/Atividade03.png";
-import tshirt4 from "@/assets/Atividade04.png";
-import tshirt5 from "@/assets/Atividade05.png";
-import tshirt6 from "@/assets/Atividade06.png";
-import tshirt7 from "@/assets/Atividade07.png";
-import tshirt8 from "@/assets/Atividade08.png";
-import tshirt9 from "@/assets/Atividade09.png";
-import tshirt10 from "@/assets/Atividade10.png";
-import tshirt11 from "@/assets/Atividade11.png";
-import tshirt12 from "@/assets/Atividade12.png";
-import tshirt13 from "@/assets/Atividade13.png";
-import tshirt14 from "@/assets/Atividade14.png";
-import tshirt15 from "@/assets/Atividade15.png";
+import tshirt1 from "@/assets/Copa01.png";
+import tshirt2 from "@/assets/Copa02.png";
+import tshirt3 from "@/assets/Copa03.png";
+import tshirt4 from "@/assets/Copa04.png";
+import tshirt5 from "@/assets/Copa05.png";
+import tshirt13 from "@/assets/Copa06.png";
+import tshirt14 from "@/assets/Copa07.png";
+import tshirt15 from "@/assets/Copa08.png";
 import HeroCopa from "@/assets/HeroCopa.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
@@ -190,7 +183,7 @@ const Index = () => {
           </div>
 
           <h1 className={`${HeadlineFont} text-[44px] sm:text-5xl text-[#0000FF]`}>
-            <span className="text-foreground">300 Atividades da Copa do Mundo</span> Prontas para Imprimir e Aplicar
+            <span className="text-foreground">300 Artes Copa para Adesivos DTF UV </span> Prontas para Imprimir e Vender
             <br />
           </h1>
 
@@ -211,11 +204,11 @@ const Index = () => {
 
             <div className="space-y-6 text-lg sm:text-base text-foreground/90 leading-relaxed">
               <p>
-               Um material completo e pronto para trabalhar o tema Copa do Mundo em Português, Matemática, Geografia, História, Artes e Educação Infantil.
+               Receba 300 artes da Copa do Mundo para DTF UV, organizadas em cartelas com tamanhos prontos para imprimir, aplicar em copos personalizados e comecar a vender sem criar nada do zero.
               </p>
               
               <p className="font-bold text-lg sm:text-lg">
-                 Perfeito para Educação Infantil e Fundamental.
+                 Material organizado em cartelas e com tamanhos prontos.
               </p>
             </div>
           </div>
@@ -232,7 +225,7 @@ const Index = () => {
         {/* T-SHIRTS */}
         <section className="py-6 border-t border-border">
           <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-[#000080]`}>
-            Veja algumas das atividades que você vai encontrar
+            Veja algumas das artes que você vai encontrar
           </h2>
           <p className="mt-2 text-sm text-muted-foreground text-center">Deslize para o lado pra ver mais</p>
 
@@ -253,16 +246,16 @@ const Index = () => {
           <div className="space-y-4">
             {[
               { 
-                icon: "📘", 
-                title: "Material Pronto para imprimir em A4", 
+                icon: "💰", 
+                title: "Material Pronto para imprimir e vender", 
               },
               { 
-                icon: "📚", 
-                title: "Do ensino Infantil até o Ensino Fundamental I",
+                icon: "✂️", 
+                title: "Cartelas prontas em tamanhos reais",
               },
               { 
-                icon: "🏅", 
-                title: "Visual encantador",
+                icon: "✏️", 
+                title: "Editável no Canva",
               },
             ].map((item, idx) => (
               <div 
@@ -300,12 +293,12 @@ const Index = () => {
         <section className="mt-4">
           <div className="space-y-3">
             {[
-              { emoji: "✅", text: "300 Atividades do Ensino Infantil até o Ensino Fundamental I." },
-              { emoji: "✅", text: "Português, Matemática, Geografia, História, Artes, Ciências e Educação Infantil." },
+              { emoji: "✅", text: "300 artes da Copa do Mundo em PNG com fundo transparente." },
+              { emoji: "✅", text: "Artes organizadas por tema: futebol, copa, bar, churrasco e dia de jogo." },
               { emoji: "✅", text: "Material completo e pronto para imprimir." },
-              { emoji: "✅", text: "Conteúdo organizado por temas facilitando o planejamento das aulas." },
-              { emoji: "✅", text: "Aplicação prática de cada atividade no dia a dia." },
-              { emoji: "✅", text: "Material completo em PDF. Acesse pelo celular, tablet ou computador." },
+              { emoji: "✅", text: "Tamanhos prontos para copo americano, long drink e garrafa." },
+              { emoji: "✅", text: "Modelos editáveis no Canva para personalizações sob encomendas." },
+              { emoji: "✅", text: "Material completo e pronto para vender. Acesse pelo celular, tablet ou computador." },
               { emoji: "🎁", text: "Bônus exclusivos no Plano Completo." },
             ].map((item, idx) => (
               <div 

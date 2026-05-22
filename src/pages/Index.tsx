@@ -22,12 +22,13 @@ import Feedback02 from "@/assets/Relato02.png";
 import Feedback03 from "@/assets/Relato03.png";
 import Feedback04 from "@/assets/Relato04.png";
 import GarantiaImage from "@/assets/Garantia.webp";
-import BancoBonus from "@/assets/BancoBonus.png";
-import CadernoBonus from "@/assets/CadernoBonus.png";
-import CuriosidadeBonus from "@/assets/CuriosidadeBonus.png";
-import DinamicaBonus from "@/assets/DinamicaBonus.png";
-import FiguraBonus from "@/assets/FiguraBonus.png";
-import PlanoBonus from "@/assets/PlanoBonus.png";
+import GuiaBonus from "@/assets/GuiaBonus.png";
+import MockupBonus from "@/assets/MockupBonus.png";
+import NomesBonus from "@/assets/NomesBonus.png";
+import BarBonus from "@/assets/BarBonus.png";
+import InfantilBonus from "@/assets/InfantilBonus.png";
+import FemBonus from "@/assets/FemBonus.png";
+import OneBonus from "@/assets/100Bonus.png";
 
 const CHECKOUT_URL = "#checkout";
 const PREMIUM_CHECKOUT_URL = "https://pay.wiapy.com/6a03c77a7483096845580587";
@@ -73,45 +74,52 @@ const tshirts = [
 
 const bonuses = [
   {
-    title: "Figurinhas Editáveis com Foto dos Alunos",
-    desc: "Modelo de figurinhas 100% editável para você inserir as fotos da turma e criar um álbum único e personalizado.",
+    title: "Guia de Aplicacao DTF UV em Copos",
+    desc: "Passo a passo para aplicar adesivos DTF UV em copos com seguranca, evitando os erros mais comuns na aplicacao.",
     old: "R$19,90",
-    imageSrc: FiguraBonus,
+    imageSrc: GuiaBonus,
     isBonus: true,
   },
   {
-    title: "Dinâmicas Divertidas",
-    desc: "Recursos complementares para trabalhar o tema Copa de forma criativa.",
+    title: "Kit de Mockups Prontos para Divulgação",
+    desc: "Mockups realistas de copos personalizados para postar no Instagram, WhatsApp e Marketplace sem precisar fotografar nada.",
     old: "R$19,90",
-    imageSrc: DinamicaBonus,
+    imageSrc: MockupBonus,
     isBonus: true,
   },
   {
-    title: "Banco de Avaliações",
-    desc: "Provas, simulados e atividades avaliativas prontas com gabarito.",
+    title: "Pack de Combos para Bares e Eventos",
+    desc: "Artes + ideias de kits para Bares, Resenhas, Churrascos, Empresas e Eventos da Copa.",
     old: "R$19,90",
-    imageSrc: BancoBonus,
+    imageSrc: BarBonus,
     isBonus: true,
   },
   {
-    title: "Plano de Aulas",
-    desc: "Plano de aulas completo para facilitar a sua vida como professor.",
+    title: "Pack de Nomes Brasileiros Prontos",
+    desc: "Centenas de nomes já prontos em estilo torcida.",
     old: "R$27",
-    imageSrc: PlanoBonus,
+    imageSrc: NomesBonus,
     isBonus: true,
   },
   {
-    title: "Caderno de Colorir",
-    desc: "Caderno de colorir com imagens e atividades para engajar seus alunos.",
+    title: "Pack Infantil da Copa",
+    desc: "Artes fofas para copos infantis, lembrancinhas,  escolinhas e festas.",
     old: "R$27",
-    imageSrc: CadernoBonus,
+    imageSrc: InfantilBonus,
     isBonus: true,
   },
   {
-    title: "50 Curiosidades da Copa",
-    desc: "50 curiosidades sobre a Copa do Mundo para aprender mais.",
+    title: "Pack Torcida Feminina",
+    desc: "Artes mais delicadas, modernas e estilosas voltadas ao público feminino.",
     old: "R$27",
-    imageSrc: CuriosidadeBonus,
+    imageSrc: FemBonus,
+    isBonus: true,
+  },
+  {
+    title: "Lista de 100 Ideias de Produtos para Vender na Copa",
+    desc: "100 ideias de produtos personalizados: copo americano, garrafa, squeeze, chaveiro, placa, brinde corporativo, kit churrasco e mais.",
+    old: "R$27",
+    imageSrc: OneBonus,
     isBonus: true,
   },
 ];

@@ -17,10 +17,10 @@ import AtividadeImage from "@/assets/Atividades.png";
 import AvaliacaoImage from "@/assets/Avaliacao.png";
 import CuriosidadeImage from "@/assets/Curiosidade.png";
 import DinamicaImage from "@/assets/Dinamica.png";
-import Feedback01 from "@/assets/Relato01.png";
-import Feedback02 from "@/assets/Relato02.png";
-import Feedback03 from "@/assets/Relato03.png";
-import Feedback04 from "@/assets/Relato04.png";
+import Feedback01 from "@/assets/Feedback01.png";
+import Feedback02 from "@/assets/Feedback02.png";
+import Feedback03 from "@/assets/Feedback03.png";
+import Feedback04 from "@/assets/Feedback04.png";
 import GarantiaImage from "@/assets/Garantia.webp";
 import GuiaBonus from "@/assets/GuiaBonus.png";
 import MockupBonus from "@/assets/MockupBonus.png";
@@ -397,7 +397,7 @@ const Index = () => {
                 <span className="text-4xl font-extrabold text-black">R$10,00</span>
               </div>
               <ul className="mt-4 space-y-2 text-sm text-left self-start">
-                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> 300 Atividades da Copa</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> +300 Artes da Copa em PNG transparente</li>
                 <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Atualizações Semanais</li>
                 <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Bônus Inclusos</li>
               </ul>
@@ -442,13 +442,14 @@ const Index = () => {
 
                 <ul className="mt-5 space-y-2.5 text-medium text-left self-start">
                   {[
-                    "300 Atividades da Copa",
-                    "Figurinhas Editáveis com Foto dos Alunos",
-                    "Dinâmicas Divertidas",
-                    "Banco de Avaliações",
-                    "Plano de Aulas",
-                    "Caderno de Colorir",
-                    "50 Curiosidades da Copa",
+                    "+300 Artes da Copa em PNG transparente",
+                    "Guia de Aplicação DTF UV em Copos",
+                    "Kit de Mockups Prontos para Divulgação",
+                    "Pack de Combos para Bares e Eventos",
+                    "Pack de Nomes Brasileiros Prontos",
+                    "Pack Infantil da Copa",
+                    "Pack Torcida Feminina",
+                    "Lista de 100 Ideias de Produtos para Vender na Copa",
                     "Atualizações Semanais",
                   ].map((it) => (
                     <li key={it} className="flex items-start gap-2">
@@ -491,7 +492,7 @@ const Index = () => {
               </h2>
               <div className="space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
                 <p>
-                  Estamos tão certos de que as <span className="text-foreground font-bold">Atividades da Copa</span> vão transformar as suas aulas e facilitar sua rotina, que oferecemos uma garantia de satisfação total por <span className="text-black font-bold text-lg">30 dias</span>.
+                  Confiamos tanto no nosso material que se por qualquer motivo voce nao ficar satisfeito <span className="text-foreground font-bold">basta nos enviar uma mensagem dentro de 30 dias e devolvemos</span> 100% do seu dinheiro, sem perguntas, sem burocracia.
                 </p>
               </div>
             </div>

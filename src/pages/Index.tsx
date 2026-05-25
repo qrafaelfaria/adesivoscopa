@@ -10,7 +10,7 @@ import tshirt5 from "@/assets/Copa05.png";
 import tshirt13 from "@/assets/Copa06.png";
 import tshirt14 from "@/assets/Copa07.png";
 import tshirt15 from "@/assets/Copa08.png";
-import HeroCopa from "@/assets/HeroAdesivo.png";
+import HeroCopa from "@/assets/Hero250.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
 import AtividadeImage from "@/assets/Atividades.png";
@@ -125,9 +125,9 @@ const bonuses = [
 ];
 
 const faqs = [
-  { q: "Como recebo o acesso?", a: "O acesso é imediato! Assim que o pagamento for confirmado, você receberá um e-mail com o link para baixar todas as atividades e bônus." },
-  { q: "Preciso de programas especiais para abrir?", a: "Não. Todos os arquivos estão em formato PDF de alta qualidade, prontos para abrir em qualquer celular ou computador e imprimir em folha A4 comum." },
-  { q: "O pagamento é seguro?", a: "Sim, utilizamos uma das maiores plataformas de pagamentos do Brasil. Seus dados estão 100% protegidos e a entrega é garantida." },
+  { q: "As artes funcionam para impressao em DTF UV?", a: "Sim. Todas as artes sao entregues em PNG com fundo transparente, no formato correto para impressao em DTF UV. As artes ja estao nos tamanhos certos para enviar direto para a grafica sem nenhum ajuste adicional." },
+  { q: "Posso usar as artes para vender meus produtos?", a: "Sim. As artes sao licenciadas para uso comercial na producao e venda de produtos fisicos personalizados, como copos, garrafas, brindes e lembrancinhas." },
+  { q: "Como vou receber o material apos a compra?", a: "Apos a confirmacao do pagamento, voce recebe um e-mail com o link de acesso para baixar todos os arquivos. O acesso e imediato e vitalicio." },
   { q: "E se eu não gostar do material?", a: "Não se preocupe. Você tem uma garantia de 30 dias. Se por qualquer motivo não ficar satisfeito, devolvemos todo o seu dinheiro." },
 ];
 
@@ -175,7 +175,7 @@ const Index = () => {
   }, [currentSlide]);
 
   return (
-    <main className="bg-[#f0efef] text-foreground">
+    <main className="bg-[#f8f8f8] text-foreground">
       {/* Top urgency bar */}
       <div className="w-full bg-gradient-urgency text-urgency-foreground text-center text-xs sm:text-sm font-bold py-2 px-3">
         <span className="inline-flex items-center gap-1.5">
@@ -191,7 +191,7 @@ const Index = () => {
           </div>
 
           <h1 className={`${HeadlineFont} text-[44px] sm:text-5xl text-[#0000FF]`}>
-            <span className="text-foreground">300 Artes Copa para Adesivos DTF UV </span> Prontas para Imprimir e Vender
+            <span className="text-foreground">250 Artes da Copa do Mundo para Adesivos DTF UV </span> Prontas para Imprimir e Vender
             <br />
           </h1>
 
@@ -212,7 +212,7 @@ const Index = () => {
 
             <div className="space-y-6 text-lg sm:text-base text-foreground/90 leading-relaxed">
               <p>
-               Receba 300 artes da Copa do Mundo para DTF UV, organizadas em cartelas com tamanhos prontos para imprimir, aplicar em copos personalizados e comecar a vender sem criar nada do zero.
+               Receba 250 artes da Copa do Mundo para DTF UV, organizadas em cartelas com tamanhos prontos para imprimir, aplicar em copos personalizados e comecar a vender sem criar nada do zero.
               </p>
               
               <p className="font-bold text-lg sm:text-lg">
@@ -301,7 +301,7 @@ const Index = () => {
         <section className="mt-4">
           <div className="space-y-3">
             {[
-              { emoji: "✅", text: "300 artes da Copa do Mundo em PNG com fundo transparente." },
+              { emoji: "✅", text: "250 artes da Copa do Mundo em PNG com fundo transparente." },
               { emoji: "✅", text: "Artes organizadas por tema: futebol, copa, bar, churrasco e dia de jogo." },
               { emoji: "✅", text: "Material completo e pronto para imprimir." },
               { emoji: "✅", text: "Tamanhos prontos para copo americano, long drink e garrafa." },
@@ -328,7 +328,7 @@ const Index = () => {
         <section className="py-6 mt-4">
           <div className="bg-[#cc0000] -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
-              🎁 Além das <strong>300 Artes</strong>, ao adquirir o <br />
+              🎁 Além das <strong>250 Artes</strong>, ao adquirir o <br />
               Plano Completo você vai levar <strong>6 SUPER BÔNUS!</strong>
             </p>
             
@@ -397,7 +397,7 @@ const Index = () => {
                 <span className="text-4xl font-extrabold text-black">R$10,00</span>
               </div>
               <ul className="mt-4 space-y-2 text-sm text-left self-start">
-                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> +300 Artes da Copa em PNG transparente</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> 250 Artes da Copa do Mundo em PNG transparente</li>
                 <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Atualizações Semanais</li>
                 <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Bônus Inclusos</li>
               </ul>
@@ -442,7 +442,7 @@ const Index = () => {
 
                 <ul className="mt-5 space-y-2.5 text-medium text-left self-start">
                   {[
-                    "+300 Artes da Copa em PNG transparente",
+                    "250 Artes da Copa do Mundo em PNG transparente",
                     "Guia de Aplicação DTF UV em Copos",
                     "Kit de Mockups Prontos para Divulgação",
                     "Pack de Combos para Bares e Eventos",

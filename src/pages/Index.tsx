@@ -517,14 +517,10 @@ const Index = () => {
               </AccordionItem>
             ))}
           </Accordion>
-
-          <div className="mt-8">
-            <HeroCTA href={PREMIUM_CHECKOUT_URL}>Quero meu acesso premium</HeroCTA>
-          </div>
         </section>
 
         <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
-          © {new Date().getFullYear()} Atividades da Copa · Todos os direitos reservados
+          © {new Date().getFullYear()} Artes Copa do Mundo · Todos os direitos reservados
         </footer>
       </div>
 

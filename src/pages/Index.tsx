@@ -420,14 +420,23 @@ const Index = () => {
             </div>
 
             {/* Premium */}
-            <div className="relative rounded-3xl p-[2px]bg-gold shadow-gold overflow-hidden">
+            <div className="relative rounded-3xl p-[2px] bg-gold shadow-gold overflow-hidden">
               <div className="bg-gold text-black py-1.5 flex items-center justify-center gap-2 font-black text-[11px] uppercase tracking-wider">
                 <Crown className="w-3.5 h-3.5" />
                 <Trophy className="w-3.5 h-3.5" />
                 MELHOR CUSTO-BENEFÍCIO
               </div>
-              <div className="rounded-b-[22px] bg-card p-6 text-center flex flex-col items-center">
+              <div className="rounded-b-[22px] bg-[#f8f8f8] p-6 text-center flex flex-col items-center">
                 <div className="text-xs font-bold uppercase tracking-wider text-black mt-2">Premium</div>
+                
+                <div className="mt-4 mb-2">
+                  <img 
+                    src={HeroCopa} 
+                    alt="Preview Premium" 
+                    className="w-full h-auto rounded-xl" 
+                  />
+                </div>
+
                 <div className="mt-2 flex items-end justify-center gap-2">
                   <span className="text-base line-through text-muted-foreground">De R$129</span>
                 </div>

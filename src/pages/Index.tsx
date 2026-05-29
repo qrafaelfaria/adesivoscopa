@@ -329,7 +329,7 @@ const Index = () => {
           <div className="bg-[#cc0000] -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
               🎁 Além das <strong>250 Artes</strong>, ao adquirir o <br />
-              Plano Completo você vai levar <strong>6 SUPER BÔNUS!</strong>
+              Plano Completo você vai levar <strong>R$ 336 em 7 SUPER BÔNUS!</strong>
             </p>
             
             <p className="text-gold text-lg sm:text-xl font-bold italic underline mb-4">
@@ -405,7 +405,7 @@ const Index = () => {
                 onClick={handleBasicClick}
                 className="mt-5 block w-full text-center rounded-xl bg-success text-success-foreground border border-border px-5 py-3 font-bold text-sm active:scale-[0.98] transition"
               >
-                Quero o básico
+                Somente o básico
               </button>
               <div className="mt-8">
                 <p className="text-red-500 font-black text-medium leading-snug uppercase">

@@ -33,7 +33,7 @@ import OneBonus from "@/assets/100Bonus.png";
 const CHECKOUT_URL = "#checkout";
 const PREMIUM_CHECKOUT_URL = "https://pay.wiapy.com/6a03c77a7483096845580587";
 const BASIC_CHECKOUT_URL = "https://pay.wiapy.com/sVm2xI1lE";
-const DISCOUNTED_PREMIUM_CHECKOUT_URL = "https://pay.wiapy.com/g1NogNsgbN"; // URL com desconto para R$ 19,90
+const DISCOUNTED_PREMIUM_CHECKOUT_URL = "https://pay.wiapy.com/g1NogNsgbN"; // URL com desconto para R$ 14,90 (Upsell)
 
 const useCountdown = (minutes: number) => {
   const target = useMemo(() => Date.now() + minutes * 60 * 1000, [minutes]);

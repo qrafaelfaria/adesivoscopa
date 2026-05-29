@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, useRef } from "react";
-import { Play, Check, X, ChevronDown, ChevronsDown, Flame, Clock, ShieldCheck, Zap, BookOpen, Trophy, Crown, Library, Dices, Palette, Type, CheckSquare } from "lucide-react";
+import { Play, Check, X, ChevronDown, ChevronsDown, Flame, Clock, ShieldCheck, Zap, BookOpen, Trophy, Crown, Library, Dices, Palette, Type, CheckSquare, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import tshirt1 from "@/assets/Copa01.png";
@@ -442,21 +442,31 @@ const Index = () => {
 
                 <ul className="mt-5 space-y-2.5 text-medium text-left self-start">
                   {[
-                    "250 Artes da Copa do Mundo em PNG transparente",
-                    "Guia de Aplicação DTF UV em Copos",
-                    "Kit de Mockups Prontos para Divulgação",
-                    "Pack de Combos para Bares e Eventos",
-                    "Pack de Nomes Brasileiros Prontos",
-                    "Pack Infantil da Copa",
-                    "Pack Torcida Feminina",
-                    "Lista de 100 Ideias de Produtos para Vender na Copa",
-                    "Atualizações Semanais",
-                  ].map((it) => (
-                    <li key={it} className="flex items-start gap-2">
-                      <span className="mt-0.5 grid place-items-center w-5 h-5 rounded-full bg-success text-success-foreground shrink-0">
-                        <Check className="w-3 h-3" />
+                    { text: "250 Artes da Copa do Mundo (7 categorias)", isBonus: false },
+                    { text: "Material Pronto para imprimir em tamanhos reais", isBonus: false },
+                    { text: "Conteúdo organizado por temas", isBonus: false },
+                    { text: "Guia de Aplicação DTF UV em Copos", isBonus: true, bonusNum: 1 },
+                    { text: "Kit de Mockups Prontos para Divulgação", isBonus: true, bonusNum: 2 },
+                    { text: "Pack de Combos para Bares e Eventos", isBonus: true, bonusNum: 3 },
+                    { text: "Pack de Nomes Brasileiros Prontos", isBonus: true, bonusNum: 4 },
+                    { text: "Pack Infantil da Copa", isBonus: true, bonusNum: 5 },
+                    { text: "Pack Torcida Feminina", isBonus: true, bonusNum: 6 },
+                    { text: "100 Ideias de Produtos para Vender na Copa", isBonus: true, bonusNum: 7 },
+                    { text: "Atualizações Semanais", isBonus: true, bonusNum: 8 },
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      {item.isBonus ? (
+                        <span className="mt-0.5 grid place-items-center w-5 h-5 rounded-full bg-gold text-black shrink-0">
+                          <Gift className="w-3 h-3" />
+                        </span>
+                      ) : (
+                        <span className="mt-0.5 grid place-items-center w-5 h-5 rounded-full bg-success text-success-foreground shrink-0">
+                          <Check className="w-3 h-3" />
+                        </span>
+                      )}
+                      <span className={item.isBonus ? "font-bold text-black" : "text-slate-700"}>
+                        {item.isBonus ? `Bônus ${item.bonusNum} - ` : ""}{item.text}
                       </span>
-                      <span>{it}</span>
                     </li>
                   ))}
                 </ul>

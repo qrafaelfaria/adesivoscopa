@@ -191,7 +191,7 @@ const Index = () => {
           </div>
 
           <h1 className={`${HeadlineFont} text-[44px] sm:text-5xl text-primary`}>
-            <span className="text-foreground">250 Artes da Copa do Mundo para Adesivos DTF UV </span> Prontas para Imprimir e Vender
+            <span className="text-foreground">+30 Plaquinhas Festa Junina </span> Prontas para Imprimir e Usar
             <br />
           </h1>
 
@@ -212,11 +212,11 @@ const Index = () => {
 
             <div className="space-y-6 text-lg sm:text-base text-foreground/90 leading-relaxed">
               <p>
-               Receba 250 artes da Copa do Mundo para DTF UV, organizadas em cartelas com tamanhos prontos para imprimir, aplicar em copos personalizados e comecar a vender sem criar nada do zero.
+               Receba +30 plaquinhas decorativas no estilo madeira para sua festa junina prontas para imprimir e usar.
               </p>
               
               <p className="font-bold text-lg sm:text-lg">
-                 Material organizado em cartelas e com tamanhos prontos.
+                 Todas as plaquinhas seguem o mesmo padrão visual, com fundo em madeira, bandeirolas coloridas e elementos típicos juninos, deixando sua decoração super charmosa e profissional!
               </p>
             </div>
           </div>
@@ -255,15 +255,15 @@ const Index = () => {
             {[
               { 
                 icon: "💰", 
-                title: "Material Pronto para imprimir e vender", 
+                title: "Material Pronto para imprimir e usar", 
               },
               { 
                 icon: "✂️", 
-                title: "Cartelas prontas em tamanhos reais",
+                title: "Versão com 2 plaquinhas por folha para impressão maior",
               },
               { 
                 icon: "✏️", 
-                title: "Editável no Canva",
+                title: "Visual encantador",
               },
             ].map((item, idx) => (
               <div 

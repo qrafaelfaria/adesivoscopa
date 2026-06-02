@@ -10,7 +10,7 @@ import tshirt5 from "@/assets/Copa05.png";
 import tshirt13 from "@/assets/Copa06.png";
 import tshirt14 from "@/assets/Copa07.png";
 import tshirt15 from "@/assets/Copa08.png";
-import HeroCopa from "@/assets/Hero250.png";
+import HeroCopa from "@/assets/PlacaHero.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
 import AtividadeImage from "@/assets/Atividades.png";
@@ -175,7 +175,7 @@ const Index = () => {
   }, [currentSlide]);
 
   return (
-    <main className="bg-background text-foreground">
+    <main className="bg-[#f4f4f4] text-foreground">
       {/* Top urgency bar */}
       <div className="w-full bg-gradient-urgency text-urgency-foreground text-center text-xs sm:text-sm font-bold py-2 px-3">
         <span className="inline-flex items-center gap-1.5">
@@ -426,7 +426,7 @@ const Index = () => {
                 <Trophy className="w-3.5 h-3.5" />
                 MELHOR CUSTO-BENEFÍCIO
               </div>
-              <div className="rounded-b-[22px] bg-background p-6 text-center flex flex-col items-center">
+              <div className="rounded-b-[22px] bg-[#f4f4f4] p-6 text-center flex flex-col items-center">
                 <div className="text-xs font-bold uppercase tracking-wider text-black mt-2">Premium</div>
                 
                 <div className="mt-4 mb-2">

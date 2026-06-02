@@ -8,53 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Copa do Mundo Theme: Dark Blue, Green, Yellow */
-    --background: 220 50% 98%;
-    --foreground: 222 47% 11%;
+    /* Festa Junina Theme: Orange, Yellow, Red, Beige */
+    --background: 40 30% 98%;
+    --foreground: 20 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 20 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 20 20% 15%;
 
-    --primary: 222 84% 20%; /* Dark Blue */
+    --primary: 25 95% 45%; /* Orange */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 142 76% 95%; /* Light Green Background */
-    --secondary-foreground: 142 76% 20%;
+    --secondary: 45 100% 92%; /* Light Straw Background */
+    --secondary-foreground: 25 95% 20%;
 
-    --muted: 220 15% 94%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 40 10% 90%;
+    --muted-foreground: 25 10% 40%;
 
-    --accent: 48 96% 53%; /* Yellow */
-    --accent-foreground: 222 47% 11%;
+    --accent: 15 90% 50%; /* Red-Orange */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --urgency: 142 76% 36%; /* Green for Success/Urgency */
+    --urgency: 15 90% 50%; /* Red-Orange for Urgency */
     --urgency-foreground: 0 0% 100%;
 
-    --success: 142 76% 36%;
+    --success: 142 70% 45%; /* Keep green for success but slightly warmer */
     --success-foreground: 0 0% 100%;
 
-    --gold: 48 96% 53%; /* Using Yellow for Gold replacement */
-    --gold-bright: 48 96% 70%;
-    --gold-deep: 48 96% 35%;
+    --gold: 45 100% 50%; /* Bright Yellow */
+    --gold-bright: 45 100% 70%;
+    --gold-deep: 45 100% 35%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 222 84% 20%;
+    --border: 25 20% 88%;
+    --input: 25 20% 88%;
+    --ring: 25 95% 45%;
 
     --radius: 1rem;
 
-    --gradient-gold: linear-gradient(135deg, hsl(48 96% 65%), hsl(48 96% 45%));
-    --gradient-urgency: linear-gradient(135deg, hsl(142 76% 45%), hsl(142 76% 30%));
-    --gradient-dark: linear-gradient(180deg, hsl(222 84% 15%), hsl(222 84% 10%));
-    --shadow-gold: 0 10px 40px -10px hsl(48 96% 53% / 0.4);
-    --shadow-urgency: 0 10px 30px -8px hsl(142 76% 36% / 0.4);
-    --shadow-card: 0 8px 30px -10px hsl(222 47% 11% / 0.12);
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 65%), hsl(45 100% 45%));
+    --gradient-urgency: linear-gradient(135deg, hsl(15 90% 55%), hsl(15 90% 40%));
+    --gradient-dark: linear-gradient(180deg, hsl(25 95% 25%), hsl(25 95% 15%));
+    --shadow-gold: 0 10px 40px -10px hsl(45 100% 53% / 0.4);
+    --shadow-urgency: 0 10px 30px -8px hsl(15 90% 50% / 0.4);
+    --shadow-card: 0 8px 30px -10px hsl(20 20% 15% / 0.12);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -173,7 +173,7 @@ All colors MUST be HSL.
     top: 2px;
     width: calc(100% - 4px);
     height: calc(100% - 4px);
-    background: #f8fafc; /* Slate 50 for a very light gray/white card feel */
+    background: hsl(var(--background));
     border-radius: inherit;
   }
 

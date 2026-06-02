@@ -175,7 +175,7 @@ const Index = () => {
   }, [currentSlide]);
 
   return (
-    <main className="bg-[#f8f8f8] text-foreground">
+    <main className="bg-background text-foreground">
       {/* Top urgency bar */}
       <div className="w-full bg-gradient-urgency text-urgency-foreground text-center text-xs sm:text-sm font-bold py-2 px-3">
         <span className="inline-flex items-center gap-1.5">
@@ -190,7 +190,7 @@ const Index = () => {
             ⭐⭐⭐⭐⭐ +4.300 avaliações
           </div>
 
-          <h1 className={`${HeadlineFont} text-[44px] sm:text-5xl text-[#0000FF]`}>
+          <h1 className={`${HeadlineFont} text-[44px] sm:text-5xl text-primary`}>
             <span className="text-foreground">250 Artes da Copa do Mundo para Adesivos DTF UV </span> Prontas para Imprimir e Vender
             <br />
           </h1>
@@ -232,15 +232,15 @@ const Index = () => {
 
         {/* T-SHIRTS */}
         <section className="py-6 border-t border-border">
-          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-[#000080]`}>
+          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-primary`}>
             Veja algumas das artes que você vai encontrar
           </h2>
           <p className="mt-2 text-sm text-muted-foreground text-center">Deslize para o lado pra ver mais</p>
 
           <div ref={carouselRef} className="mt-5 -mx-4 px-4 flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
-            {tshirts.map((t) => (
+            {tshirts.map((t, index) => (
               <div
-                key={t.alt}
+                key={`${t.alt}-${index}`}
                 className="snap-center shrink-0 w-[85%] aspect-[3/4] rounded-2xl overflow-hidden bg-white border border-border shadow-card-dark"
               >
                 <img src={t.src} alt={t.alt} loading="lazy" className="w-full h-full object-contain block" />
@@ -268,7 +268,7 @@ const Index = () => {
             ].map((item, idx) => (
               <div 
                 key={idx}
-                className="flex gap-4 p-5 bg-white border border-border/60 border-l-4 border-l-[#008000] rounded-2xl shadow-sm"
+                className="flex gap-4 p-5 bg-white border border-border/60 border-l-4 border-l-primary rounded-2xl shadow-sm"
               >
                 <div className="space-y-1">
                   <h3 className="font-bold text-black text-lg leading-tight">
@@ -283,7 +283,7 @@ const Index = () => {
         {/* WHAT'S INSIDE SECTION */}
         <section className="pt-6 border-t border-border">
           <div className="text-center mb-5 px-4">
-            <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-[#000080] mb-1`}>
+            <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-primary mb-1`}>
               Tudo que está dentro do Material
             </h2>
           </div>
@@ -326,7 +326,7 @@ const Index = () => {
 
         {/* BONUSES */}
         <section className="py-6 mt-4">
-          <div className="bg-[#cc0000] -mx-4 px-6 py-10 mb-8 text-center text-white">
+          <div className="bg-accent -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
               🎁 Além das <strong>250 Artes</strong>, ao adquirir o <br />
               Plano Completo você vai levar <strong>R$ 336 em 7 SUPER BÔNUS!</strong>
@@ -366,7 +366,7 @@ const Index = () => {
 
 {/* TESTIMONIALS CAROUSEL */}
         <section className="py-10 border-t border-border">
-          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-[#000080]`}>
+          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-primary`}>
             Depoimentos de Quem Já Usou
           </h2>
           <p className="mt-2 text-sm text-muted-foreground text-center">Deslize para o lado pra ver mais</p>
@@ -385,7 +385,7 @@ const Index = () => {
 
         {/* PRICING */}
         <section id="checkout" className="py-10 border-t border-border">
-          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-[#000080]`}>
+          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-primary`}>
             Garanta o seu Acesso
           </h2>
           <div className="mt-6 space-y-5">
@@ -426,7 +426,7 @@ const Index = () => {
                 <Trophy className="w-3.5 h-3.5" />
                 MELHOR CUSTO-BENEFÍCIO
               </div>
-              <div className="rounded-b-[22px] bg-[#f8f8f8] p-6 text-center flex flex-col items-center">
+              <div className="rounded-b-[22px] bg-background p-6 text-center flex flex-col items-center">
                 <div className="text-xs font-bold uppercase tracking-wider text-black mt-2">Premium</div>
                 
                 <div className="mt-4 mb-2">

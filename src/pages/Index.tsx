@@ -255,11 +255,11 @@ const Index = () => {
             {[
               { 
                 icon: "💰", 
-                title: "Material Pronto para imprimir e usar", 
+                title: "Material pronto para imprimir e usar", 
               },
               { 
                 icon: "✂️", 
-                title: "Versão com 2 plaquinhas por folha para impressão maior",
+                title: "Arquivos organizados para facilitar impressão e montagem",
               },
               { 
                 icon: "✏️", 
@@ -301,12 +301,11 @@ const Index = () => {
         <section className="mt-4">
           <div className="space-y-3">
             {[
-              { emoji: "✅", text: "250 artes da Copa do Mundo em PNG com fundo transparente." },
-              { emoji: "✅", text: "Artes organizadas por tema: futebol, copa, bar, churrasco e dia de jogo." },
-              { emoji: "✅", text: "Material completo e pronto para imprimir." },
-              { emoji: "✅", text: "Tamanhos prontos para copo americano, long drink e garrafa." },
-              { emoji: "✅", text: "Modelos editáveis no Canva para personalizações sob encomendas." },
-              { emoji: "✅", text: "Material completo e pronto para vender. Acesse pelo celular, tablet ou computador." },
+              { emoji: "✅", text: "+30 Plaquinhas festa junina prontas para imprimir e usar." },
+              { emoji: "✅", text: "Caixa, banheiros, comidas, cadeia, correio elegante, bingo e muito mais..." },
+              { emoji: "✅", text: "Arquivos organizados para facilitar impressão e montagem." },
+              { emoji: "✅", text: "Versão ampliada para montagem maior (aproximadamente 54x34cm)." },
+              { emoji: "✅", text: "Material completo em PDF. Acesse pelo celular, tablet ou computador." },
               { emoji: "🎁", text: "Bônus exclusivos no Plano Completo." },
             ].map((item, idx) => (
               <div 
@@ -328,8 +327,8 @@ const Index = () => {
         <section className="py-6 mt-4">
           <div className="bg-accent -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
-              🎁 Além das <strong>250 Artes</strong>, ao adquirir o <br />
-              Plano Completo você vai levar <strong>R$ 336 em 7 SUPER BÔNUS!</strong>
+              🎁 Além das <strong>+30 Plaquinhas</strong>, ao adquirir o <br />
+              Plano Completo você vai levar <strong>7 SUPER BÔNUS!</strong>
             </p>
             
             <p className="text-gold text-lg sm:text-xl font-bold italic underline mb-4">

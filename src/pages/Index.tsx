@@ -2,14 +2,14 @@ import { useEffect, useMemo, useState, useRef } from "react";
 import { Play, Check, X, ChevronDown, ChevronsDown, Flame, Clock, ShieldCheck, Zap, BookOpen, Trophy, Crown, Library, Dices, Palette, Type, CheckSquare, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import tshirt1 from "@/assets/Copa01.png";
-import tshirt2 from "@/assets/Copa02.png";
-import tshirt3 from "@/assets/Copa03.png";
-import tshirt4 from "@/assets/Copa04.png";
-import tshirt5 from "@/assets/Copa05.png";
-import tshirt13 from "@/assets/Copa06.png";
-import tshirt14 from "@/assets/Copa07.png";
-import tshirt15 from "@/assets/Copa08.png";
+import tshirt1 from "@/assets/Placa01.png";
+import tshirt2 from "@/assets/Placa02.png";
+import tshirt3 from "@/assets/Placa03.png";
+import tshirt4 from "@/assets/Placa04.png";
+import tshirt5 from "@/assets/Placa05.png";
+import tshirt13 from "@/assets/Placa06.png";
+import tshirt14 from "@/assets/Placa07.png";
+import tshirt15 from "@/assets/Placa08.png";
 import HeroCopa from "@/assets/PlacaHero.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
@@ -66,8 +66,6 @@ const tshirts = [
   { src: tshirt4, alt: "Estampa Filhos de Deus" },
   { src: tshirt5, alt: "Estampa Cristo é Rei" },
   { src: tshirt13, alt: "Estampa Cristo é Rei" },
-  { src: tshirt14, alt: "Estampa Cristo é Rei" },
-  { src: tshirt15, alt: "Estampa Cristo é Rei" },
 ];
 
 
@@ -241,7 +239,7 @@ const Index = () => {
             {tshirts.map((t, index) => (
               <div
                 key={`${t.alt}-${index}`}
-                className="snap-center shrink-0 w-[85%] aspect-[3/4] rounded-2xl overflow-hidden bg-white border border-border shadow-card-dark"
+                className="snap-center shrink-0 w-[85%] aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-border shadow-card-dark"
               >
                 <img src={t.src} alt={t.alt} loading="lazy" className="w-full h-full object-contain block" />
               </div>

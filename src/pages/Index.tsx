@@ -13,7 +13,7 @@ import tshirt15 from "@/assets/Placa08.png";
 import HeroCopa from "@/assets/PlacaHero.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
-import AtividadeImage from "@/assets/Atividades.png";
+import AtividadeImage from "@/assets/Decoracao.png";
 import AvaliacaoImage from "@/assets/Avaliacao.png";
 import CuriosidadeImage from "@/assets/Curiosidade.png";
 import DinamicaImage from "@/assets/Dinamica.png";
@@ -22,9 +22,9 @@ import Feedback02 from "@/assets/Feedback02.png";
 import Feedback03 from "@/assets/Feedback03.png";
 import Feedback04 from "@/assets/Feedback04.png";
 import GarantiaImage from "@/assets/Garantia.webp";
-import GuiaBonus from "@/assets/GuiaBonus.png";
-import MockupBonus from "@/assets/MockupBonus.png";
-import NomesBonus from "@/assets/NomesBonus.png";
+import GuiaBonus from "@/assets/Painel.png";
+import MockupBonus from "@/assets/Bingo.png";
+import NomesBonus from "@/assets/Cardapio.png";
 import BarBonus from "@/assets/BarBonus.png";
 import InfantilBonus from "@/assets/InfantilBonus.png";
 import FemBonus from "@/assets/FemBonus.png";
@@ -72,52 +72,31 @@ const tshirts = [
 
 const bonuses = [
   {
-    title: "Guia de Aplicacao DTF UV em Copos",
-    desc: "Passo a passo para aplicar adesivos DTF UV em copos com seguranca, evitando os erros mais comuns na aplicacao.",
+    title: "Kit Painel Decorativo Festa Junina",
+    desc: "Receba modelos de painéis prontos para imprimir e montar na sua escola. Ideal para criar cenários temáticos para fotos, apresentações e decoração da festa.",
     old: "R$19,90",
     imageSrc: GuiaBonus,
     isBonus: true,
   },
   {
-    title: "Kit de Mockups Prontos para Divulgação",
-    desc: "Mockups realistas de copos personalizados para postar no Instagram, WhatsApp e Marketplace sem precisar fotografar nada.",
+    title: "Kit Decoração Divertida Festa Junina",
+    desc: "Bandeirinhas, elementos decorativos, personagens temáticos e enfeites prontos para transformar qualquer ambiente em uma verdadeira Festa Junina.",
     old: "R$19,90",
+    imageSrc: AtividadeImage,
+    isBonus: true,
+  },
+  {
+    title: "Kit Brincadeiras Tradicionais Festa Junina",
+    desc: "Materiais prontos para organizar atividades clássicas como pescaria, correio elegante, boca do palhaço, jogo das argolas e outras brincadeiras que fazem sucesso com os alunos.",
+    old: "R$27",
     imageSrc: MockupBonus,
     isBonus: true,
   },
   {
-    title: "Pack de Combos para Bares e Eventos",
-    desc: "Artes + ideias de kits para Bares, Resenhas, Churrascos, Empresas e Eventos da Copa.",
-    old: "R$19,90",
-    imageSrc: BarBonus,
-    isBonus: true,
-  },
-  {
-    title: "Pack de Nomes Brasileiros Prontos",
-    desc: "Centenas de nomes já prontos em estilo torcida.",
+    title: "Cardápio Editável no Canva",
+    desc: "Modelos de cardápios totalmente editáveis para personalizar comidas, bebidas, preços e informações da sua festa de forma rápida e profissional.",
     old: "R$27",
     imageSrc: NomesBonus,
-    isBonus: true,
-  },
-  {
-    title: "Pack Infantil da Copa",
-    desc: "Artes fofas para copos infantis, lembrancinhas,  escolinhas e festas.",
-    old: "R$27",
-    imageSrc: InfantilBonus,
-    isBonus: true,
-  },
-  {
-    title: "Pack Torcida Feminina",
-    desc: "Artes mais delicadas, modernas e estilosas voltadas ao público feminino.",
-    old: "R$27",
-    imageSrc: FemBonus,
-    isBonus: true,
-  },
-  {
-    title: "Lista de 100 Ideias de Produtos para Vender na Copa",
-    desc: "100 ideias de produtos personalizados: copo americano, garrafa, squeeze, chaveiro, placa, brinde corporativo, kit churrasco e mais.",
-    old: "R$27",
-    imageSrc: OneBonus,
     isBonus: true,
   },
 ];
@@ -326,7 +305,7 @@ const Index = () => {
           <div className="bg-accent -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
               🎁 Além das <strong>+30 Plaquinhas</strong>, ao adquirir o <br />
-              Plano Completo você vai levar <strong>7 SUPER BÔNUS!</strong>
+              Plano Completo você vai levar <strong>3 SUPER BÔNUS!</strong>
             </p>
             
             <p className="text-gold text-lg sm:text-xl font-bold italic underline mb-4">

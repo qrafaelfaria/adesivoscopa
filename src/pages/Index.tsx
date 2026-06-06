@@ -102,9 +102,8 @@ const bonuses = [
 ];
 
 const faqs = [
-  { q: "As artes funcionam para impressao em DTF UV?", a: "Sim. Todas as artes sao entregues em PNG com fundo transparente, no formato correto para impressao em DTF UV. As artes ja estao nos tamanhos certos para enviar direto para a grafica sem nenhum ajuste adicional." },
-  { q: "Posso usar as artes para vender meus produtos?", a: "Sim. As artes sao licenciadas para uso comercial na producao e venda de produtos fisicos personalizados, como copos, garrafas, brindes e lembrancinhas." },
-  { q: "Como vou receber o material apos a compra?", a: "Apos a confirmacao do pagamento, voce recebe um e-mail com o link de acesso para baixar todos os arquivos. O acesso e imediato e vitalicio." },
+  { q: "As artes funcionam para qualquer impressora?", a: "Sim. Todas as artes são entregues em alta resolução (PNG e PDF), prontas para imprimir em casa ou em gráfica rápida, sem necessidade de ajustes complexos." },
+  { q: "Como vou receber o material após a compra?", a: "Após a confirmação do pagamento, você recebe um e-mail com o link de acesso imediato para baixar todos os arquivos. O acesso é vitalício." },
   { q: "E se eu não gostar do material?", a: "Não se preocupe. Você tem uma garantia de 30 dias. Se por qualquer motivo não ficar satisfeito, devolvemos todo o seu dinheiro." },
 ];
 
@@ -175,7 +174,7 @@ const Index = () => {
           <div className="mt-6 mb-8">
             <img 
               src={HeroCopa} 
-              alt="Atividades da Copa" 
+              alt="Atividades Festa Junina" 
               className="w-full h-auto rounded-2xl"
               loading="eager"
             />
@@ -267,7 +266,7 @@ const Index = () => {
           <div className="mt-4 mb-8 px-4">
             <img 
               src={HeroCopa} 
-              alt="Preview do Material Copa Educativa" 
+              alt="Preview do Material Festa Junina" 
               className="w-full h-auto"
               loading="lazy"
             />
@@ -305,7 +304,7 @@ const Index = () => {
           <div className="bg-accent -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
               🎁 Além das <strong>+30 Plaquinhas</strong>, ao adquirir o <br />
-              Plano Completo você vai levar <strong>3 SUPER BÔNUS!</strong>
+              Plano Completo você vai levar <strong>4 SUPER BÔNUS!</strong>
             </p>
             
             <p className="text-gold text-lg sm:text-xl font-bold italic underline mb-4">
@@ -511,8 +510,10 @@ const Index = () => {
           </Accordion>
         </section>
 
-        <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
-          © {new Date().getFullYear()} Artes Copa do Mundo · Todos os direitos reservados
+        <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border mt-10">
+          <p>
+            © {new Date().getFullYear()} Artes Festa Junina · Todos os direitos reservados
+          </p>
         </footer>
       </div>
 

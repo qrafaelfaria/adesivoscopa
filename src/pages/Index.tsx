@@ -17,10 +17,10 @@ import AtividadeImage from "@/assets/Decoracao.png";
 import AvaliacaoImage from "@/assets/Avaliacao.png";
 import CuriosidadeImage from "@/assets/Curiosidade.png";
 import DinamicaImage from "@/assets/Dinamica.png";
-import Feedback01 from "@/assets/Feedback01.png";
-import Feedback02 from "@/assets/Feedback02.png";
-import Feedback03 from "@/assets/Feedback03.png";
-import Feedback04 from "@/assets/Feedback04.png";
+import Feedback01 from "@/assets/Feed01.png";
+import Feedback02 from "@/assets/Feed02.png";
+import Feedback03 from "@/assets/Feed03.png";
+import Feedback04 from "@/assets/Feed04.png";
 import GarantiaImage from "@/assets/Garantia.webp";
 import GuiaBonus from "@/assets/Painel.png";
 import MockupBonus from "@/assets/Bingo.png";
@@ -373,7 +373,7 @@ const Index = () => {
                 <span className="text-4xl font-extrabold text-black">R$10,00</span>
               </div>
               <ul className="mt-4 space-y-2 text-sm text-left self-start">
-                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> 250 Artes da Copa do Mundo em PNG transparente</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> +30 Plaquinhas Festa Junina Prontas para Imprimir e Usar</li>
                 <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Atualizações Semanais</li>
                 <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Bônus Inclusos</li>
               </ul>
@@ -427,17 +427,14 @@ const Index = () => {
 
                 <ul className="mt-5 space-y-2.5 text-medium text-left self-start">
                   {[
-                    { text: "250 Artes da Copa do Mundo (7 categorias)", isBonus: false },
+                    { text: "+30 Plaquinhas Festa Junina Prontas para Imprimir e Usar", isBonus: false },
                     { text: "Material Pronto para imprimir em tamanhos reais", isBonus: false },
                     { text: "Conteúdo organizado por temas", isBonus: false },
-                    { text: "Guia de Aplicação DTF UV em Copos", isBonus: true, bonusNum: 1 },
-                    { text: "Kit de Mockups Prontos para Divulgação", isBonus: true, bonusNum: 2 },
-                    { text: "Pack de Combos para Bares e Eventos", isBonus: true, bonusNum: 3 },
-                    { text: "Pack de Nomes Brasileiros Prontos", isBonus: true, bonusNum: 4 },
-                    { text: "Pack Infantil da Copa", isBonus: true, bonusNum: 5 },
-                    { text: "Pack Torcida Feminina", isBonus: true, bonusNum: 6 },
-                    { text: "100 Ideias de Produtos para Vender na Copa", isBonus: true, bonusNum: 7 },
-                    { text: "Atualizações Semanais", isBonus: true, bonusNum: 8 },
+                    { text: "Kit Painel Decorativo Festa Junina", isBonus: true, bonusNum: 1 },
+                    { text: "Kit Decoração Divertida Festa Junina", isBonus: true, bonusNum: 2 },
+                    { text: "Kit Brincadeiras Tradicionais Festa Junina", isBonus: true, bonusNum: 3 },
+                    { text: "Cardápio Editável no Canva", isBonus: true, bonusNum: 4 },
+                    { text: "Atualizações Semanais", isBonus: true, bonusNum: 5 },
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       {item.isBonus ? (

@@ -46,20 +46,17 @@ const PremiumOfferModal: React.FC<PremiumOfferModalProps> = ({
             <div className="flex items-center gap-2 justify-center mb-4">
               <span className="text-xl">🎁</span>
               <span className="text-primary font-black text-sm sm:text-base uppercase tracking-tight">
-                + 6 BÔNUS EXCLUSIVOS
+                + 5 BÔNUS EXCLUSIVOS
               </span>
             </div>
             
             <ul className="space-y-2.5 text-left">
               {[
-                "Bônus 1 - Guia de Aplicação DTF UV",
-                "Bônus 2 - Kit de Mockups Realistas",
-                "Bônus 3 - Pack para Bares e Eventos",
-                "Bônus 4 - Pack de Nomes Brasileiros",
-                "Bônus 5 - Pack Infantil da Copa",
-                "Bônus 6 - Pack Torcida Feminina",
-                "Bônus 7 - 100 Ideias de Produtos para Vender na Copa",
-                "Bônus 8 - Atualizações Semanais",
+                "Bônus 1 - Kit Painel Decorativo Festa Junina",
+                "Bônus 2 - Kit Decoração Divertida Festa Junina",
+                "Bônus 3 - Kit Brincadeiras Tradicionais Festa Junina",
+                "Bônus 4 - Cardápio Editável no Canva",
+                "Bônus 5 - Atualizações Semanais",
               ].map((bonus, idx) => (
                 <li key={idx} className="flex items-center gap-2.5">
                   <div className="flex-shrink-0 w-5 h-5 rounded-md bg-success flex items-center justify-center">

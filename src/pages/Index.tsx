@@ -199,7 +199,7 @@ const Index = () => {
         </section>
 
           <div className="mt-2">
-            <HeroCTA>Quero ter acesso agora</HeroCTA>
+            <HeroCTA>Garantir Acesso</HeroCTA>
             <p className="mt-3 text-center text-xs text-muted-foreground inline-flex w-full items-center justify-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-success" /> Pagamento 100% seguro · Acesso imediato
             </p>
@@ -454,7 +454,7 @@ const Index = () => {
 
                 <div className="mt-8 w-full">
                   <HeroCTA href={PREMIUM_CHECKOUT_URL} pulse={false}>
-                    Quero o plano premium
+                    QUERO O PLANO PREMIUM
                   </HeroCTA>
                 </div>
 

@@ -2,15 +2,15 @@ import { useEffect, useMemo, useState, useRef } from "react";
 import { Play, Check, X, ChevronDown, ChevronsDown, Flame, Clock, ShieldCheck, Zap, BookOpen, Trophy, Crown, Library, Dices, Palette, Type, CheckSquare, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import tshirt1 from "@/assets/Placa01.png";
-import tshirt2 from "@/assets/Placa02.png";
-import tshirt3 from "@/assets/Placa03.png";
-import tshirt4 from "@/assets/Placa04.png";
-import tshirt5 from "@/assets/Placa05.png";
-import tshirt13 from "@/assets/Placa06.png";
+import tshirt1 from "@/assets/Atividade01.png";
+import tshirt2 from "@/assets/Atividade02.png";
+import tshirt3 from "@/assets/Atividade03.png";
+import tshirt4 from "@/assets/Atividade04.png";
+import tshirt5 from "@/assets/Atividade05.png";
+import tshirt13 from "@/assets/Atividade06.png";
 import tshirt14 from "@/assets/Placa07.png";
 import tshirt15 from "@/assets/Placa08.png";
-import HeroCopa from "@/assets/PlacaHero.png";
+import HeroCopa from "@/assets/HeroFesta.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
 import AtividadeImage from "@/assets/Decoracao.png";
@@ -92,18 +92,12 @@ const bonuses = [
     imageSrc: MockupBonus,
     isBonus: true,
   },
-  {
-    title: "Cardápio Editável no Canva",
-    desc: "Modelos de cardápios totalmente editáveis para personalizar comidas, bebidas, preços e informações da sua festa de forma rápida e profissional.",
-    old: "R$27",
-    imageSrc: NomesBonus,
-    isBonus: true,
-  },
 ];
 
 const faqs = [
-  { q: "As artes funcionam para qualquer impressora?", a: "Sim. Todas as artes são entregues em alta resolução (PNG e PDF), prontas para imprimir em casa ou em gráfica rápida, sem necessidade de ajustes complexos." },
-  { q: "Como vou receber o material após a compra?", a: "Após a confirmação do pagamento, você recebe um e-mail com o link de acesso imediato para baixar todos os arquivos. O acesso é vitalício." },
+  { q: "Como recebo o acesso?", a: "O acesso é imediato! Assim que o pagamento for confirmado, você receberá um e-mail com o link para baixar todas as atividades e bônus." },
+  { q: "Preciso de programas especiais para abrir?", a: "Não. Todos os arquivos estão em formato PDF de alta qualidade, prontos para abrir em qualquer celular ou computador e imprimir em folha A4 comum." },
+  { q: "O pagamento é seguro?", a: "Sim, utilizamos uma das maiores plataformas de pagamentos do Brasil. Seus dados estão 100% protegidos e a entrega é garantida." },
   { q: "E se eu não gostar do material?", a: "Não se preocupe. Você tem uma garantia de 30 dias. Se por qualquer motivo não ficar satisfeito, devolvemos todo o seu dinheiro." },
 ];
 
@@ -151,7 +145,7 @@ const Index = () => {
   }, [currentSlide]);
 
   return (
-    <main className="bg-[#f4f4f4] text-foreground">
+    <main className="bg-[#efeeee] text-foreground">
       {/* Top urgency bar */}
       <div className="w-full bg-gradient-urgency text-urgency-foreground text-center text-xs sm:text-sm font-bold py-2 px-3">
         <span className="inline-flex items-center gap-1.5">
@@ -167,7 +161,7 @@ const Index = () => {
           </div>
 
           <h1 className={`${HeadlineFont} text-[44px] sm:text-5xl text-primary`}>
-            <span className="text-foreground">+30 Plaquinhas Festa Junina </span> Prontas para Imprimir e Usar
+            <span className="text-foreground">300 Atividades Pedagógicas da Festa Junina </span> Prontas para Imprimir e Usar
             <br />
           </h1>
 
@@ -188,11 +182,11 @@ const Index = () => {
 
             <div className="space-y-6 text-lg sm:text-base text-foreground/90 leading-relaxed">
               <p>
-               Receba +30 plaquinhas decorativas no estilo madeira para sua festa junina prontas para imprimir e usar.
+               Um material completo e pronto para trabalhar o tema Festa Junina em Português, Matemática, Geografia, História, Ciências, Artes e Educação Física.
               </p>
               
               <p className="font-bold text-lg sm:text-lg">
-                 Todas as plaquinhas seguem o mesmo padrão visual, com fundo em madeira, bandeirolas coloridas e elementos típicos juninos, deixando sua decoração super charmosa e profissional!
+               Alinhado à BNCC do Fundamental I (1º ao 5º ano) e pronto para usar em sala, no reforço escolar ou com a criança em casa.
               </p>
             </div>
           </div>
@@ -217,7 +211,7 @@ const Index = () => {
             {tshirts.map((t, index) => (
               <div
                 key={`${t.alt}-${index}`}
-                className="snap-center shrink-0 w-[85%] aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-border shadow-card-dark"
+                className="snap-center shrink-0 w-[85%] aspect-[3/4] rounded-2xl overflow-hidden bg-white border border-border shadow-card-dark"
               >
                 <img src={t.src} alt={t.alt} loading="lazy" className="w-full h-full object-contain block" />
               </div>
@@ -231,11 +225,11 @@ const Index = () => {
             {[
               { 
                 icon: "💰", 
-                title: "Material pronto para imprimir e usar", 
+                title: "Material Pronto para imprimir em A4", 
               },
               { 
                 icon: "✂️", 
-                title: "Arquivos organizados para facilitar impressão e montagem",
+                title: "Do ensino Infantil até o Ensino Fundamental I",
               },
               { 
                 icon: "✏️", 
@@ -277,10 +271,11 @@ const Index = () => {
         <section className="mt-4">
           <div className="space-y-3">
             {[
-              { emoji: "✅", text: "+30 Plaquinhas festa junina prontas para imprimir e usar." },
-              { emoji: "✅", text: "Caixa, banheiros, comidas, cadeia, correio elegante, bingo e muito mais..." },
-              { emoji: "✅", text: "Arquivos organizados para facilitar impressão e montagem." },
-              { emoji: "✅", text: "Versão ampliada para montagem maior (aproximadamente 54x34cm)." },
+              { emoji: "✅", text: "300 Atividades do Ensino Infantil até o Ensino Fundamental I." },
+              { emoji: "✅", text: "7 apostilas temáticas com Português, Matemática, Geografia, História, Ciências, Artes e Educação Física." },
+              { emoji: "✅", text: "Material Alinhado à BNCC do Ensino Infantil até o Fundamental I (1º ao 5º ano) e pronto para usar em sala." },
+              { emoji: "✅", text: "Conteúdo organizado por temas facilitando o planejamento das aulas." },
+              { emoji: "✅", text: "Aplicação prática de cada atividade no dia a dia." },
               { emoji: "✅", text: "Material completo em PDF. Acesse pelo celular, tablet ou computador." },
               { emoji: "🎁", text: "Bônus exclusivos no Plano Completo." },
             ].map((item, idx) => (
@@ -303,7 +298,7 @@ const Index = () => {
         <section className="py-6 mt-4">
           <div className="bg-accent -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
-              🎁 Além das <strong>+30 Plaquinhas</strong>, ao adquirir o <br />
+              🎁 Além das <strong>100 Atividades</strong>, ao adquirir o <br />
               Plano Completo você vai levar <strong>4 SUPER BÔNUS!</strong>
             </p>
             
@@ -372,9 +367,9 @@ const Index = () => {
                 <span className="text-4xl font-extrabold text-black">R$10,00</span>
               </div>
               <ul className="mt-4 space-y-2 text-sm text-left self-start">
-                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> +30 Plaquinhas Festa Junina Prontas para Imprimir e Usar</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> 300 Atividades Festa Junina</li>
                 <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Atualizações Semanais</li>
-                <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Bônus Inclusos</li>
+                <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Direito aos Bônus Exclusivos</li>
               </ul>
               <button
                 onClick={handleBasicClick}
@@ -401,7 +396,7 @@ const Index = () => {
                 <Trophy className="w-3.5 h-3.5" />
                 MELHOR CUSTO-BENEFÍCIO
               </div>
-              <div className="rounded-b-[22px] bg-[#f4f4f4] p-6 text-center flex flex-col items-center">
+              <div className="rounded-b-[22px] bg-[#efeeee] p-6 text-center flex flex-col items-center">
                 <div className="text-xs font-bold uppercase tracking-wider text-black mt-2">Premium</div>
                 
                 <div className="mt-4 mb-2">
@@ -426,14 +421,13 @@ const Index = () => {
 
                 <ul className="mt-5 space-y-2.5 text-medium text-left self-start">
                   {[
-                    { text: "+30 Plaquinhas Festa Junina Prontas para Imprimir e Usar", isBonus: false },
+                    { text: "300 Atividades Festa Junina (7 apostilas)", isBonus: false },
                     { text: "Material Pronto para imprimir em tamanhos reais", isBonus: false },
                     { text: "Conteúdo organizado por temas", isBonus: false },
                     { text: "Kit Painel Decorativo Festa Junina", isBonus: true, bonusNum: 1 },
                     { text: "Kit Decoração Divertida Festa Junina", isBonus: true, bonusNum: 2 },
                     { text: "Kit Brincadeiras Tradicionais Festa Junina", isBonus: true, bonusNum: 3 },
-                    { text: "Cardápio Editável no Canva", isBonus: true, bonusNum: 4 },
-                    { text: "Atualizações Semanais", isBonus: true, bonusNum: 5 },
+                    { text: "Atualizações Semanais", isBonus: true, bonusNum: 4 },
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       {item.isBonus ? (

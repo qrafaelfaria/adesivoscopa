@@ -298,7 +298,7 @@ const Index = () => {
         <section className="py-6 mt-4">
           <div className="bg-accent -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
-              🎁 Além das <strong>100 Atividades</strong>, ao adquirir o <br />
+              🎁 Além das <strong>300 Atividades</strong>, ao adquirir o <br />
               Plano Completo você vai levar <strong>4 SUPER BÔNUS!</strong>
             </p>
             

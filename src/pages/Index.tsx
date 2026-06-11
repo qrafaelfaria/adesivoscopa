@@ -17,10 +17,9 @@ import AtividadeImage from "@/assets/Decoracao.png";
 import AvaliacaoImage from "@/assets/Avaliacao.png";
 import CuriosidadeImage from "@/assets/Curiosidade.png";
 import DinamicaImage from "@/assets/Dinamica.png";
-import Feedback01 from "@/assets/Feed01.png";
-import Feedback02 from "@/assets/Feed02.png";
-import Feedback03 from "@/assets/Feed03.png";
-import Feedback04 from "@/assets/Feed04.png";
+import Feedback01 from "@/assets/Relatu01.png";
+import Feedback02 from "@/assets/Relatu02.png";
+import Feedback03 from "@/assets/Relato04.png";
 import GarantiaImage from "@/assets/Garantia.webp";
 import GuiaBonus from "@/assets/Painel.png";
 import MockupBonus from "@/assets/Bingo.png";
@@ -105,7 +104,6 @@ const feedbackImages = [
   { src: Feedback01, alt: "Feedback de cliente 1" },
   { src: Feedback02, alt: "Feedback de cliente 2" },
   { src: Feedback03, alt: "Feedback de cliente 3" },
-  { src: Feedback04, alt: "Feedback de cliente 4" },
 ];
 
 const Index = () => {

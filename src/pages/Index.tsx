@@ -10,7 +10,7 @@ import tshirt5 from "@/assets/Atividade05.png";
 import tshirt13 from "@/assets/Atividade06.png";
 import tshirt14 from "@/assets/Placa07.png";
 import tshirt15 from "@/assets/Placa08.png";
-import HeroCopa from "@/assets/HeroFesta.png";
+import HeroCopa from "@/assets/STLHero.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
 import AtividadeImage from "@/assets/Decoracao.png";
@@ -143,7 +143,7 @@ const Index = () => {
   }, [currentSlide]);
 
   return (
-    <main className="bg-[#efeeee] text-foreground">
+    <main className="bg-[#f5f1ef] text-foreground">
       {/* Top urgency bar */}
       <div className="w-full bg-gradient-urgency text-urgency-foreground text-center text-xs sm:text-sm font-bold py-2 px-3">
         <span className="inline-flex items-center gap-1.5">
@@ -159,7 +159,7 @@ const Index = () => {
           </div>
 
           <h1 className={`${HeadlineFont} text-[44px] sm:text-5xl text-primary`}>
-            <span className="text-foreground">300 Atividades Pedagógicas da Festa Junina </span> Prontas para Imprimir e Usar
+            <span className="text-foreground">+80 Arquivos STL Católicos</span> Prontos para Imprimir e Vender
             <br />
           </h1>
 
@@ -180,11 +180,11 @@ const Index = () => {
 
             <div className="space-y-6 text-lg sm:text-base text-foreground/90 leading-relaxed">
               <p>
-               Um material completo e pronto para trabalhar o tema Festa Junina em Português, Matemática, Geografia, História, Ciências, Artes e Educação Física.
+               Um material completo mais de 80 modelos católicos em STL prontos para imprimir e vender.
               </p>
               
               <p className="font-bold text-lg sm:text-lg">
-               Alinhado à BNCC do Fundamental I (1º ao 5º ano) e pronto para usar em sala, no reforço escolar ou com a criança em casa.
+               Santos, crucifixos, terços e muito mais...
               </p>
             </div>
           </div>
@@ -269,12 +269,12 @@ const Index = () => {
         <section className="mt-4">
           <div className="space-y-3">
             {[
-              { emoji: "✅", text: "300 Atividades do Ensino Infantil até o Ensino Fundamental I." },
-              { emoji: "✅", text: "7 apostilas temáticas com Português, Matemática, Geografia, História, Ciências, Artes e Educação Física." },
-              { emoji: "✅", text: "Material Alinhado à BNCC do Ensino Infantil até o Fundamental I (1º ao 5º ano) e pronto para usar em sala." },
-              { emoji: "✅", text: "Conteúdo organizado por temas facilitando o planejamento das aulas." },
-              { emoji: "✅", text: "Aplicação prática de cada atividade no dia a dia." },
-              { emoji: "✅", text: "Material completo em PDF. Acesse pelo celular, tablet ou computador." },
+              { emoji: "✅", text: "Mais de 80 modelos católicos em STL prontos para imprimir e vender." },
+              { emoji: "✅", text: "Modelos variados de santos, crucifixos e peças religiosas." },
+              { emoji: "✅", text: "Material pronto para imprimir." },
+              { emoji: "✅", text: "Modelos detalhados para garantir um bom acabamento." },
+              { emoji: "✅", text: "Produtos ideais para vendas online e encomendas." },
+              { emoji: "✅", text: "Material organizado por temas para facilitar o planejamento no dia a dia." },
               { emoji: "🎁", text: "Bônus exclusivos no Plano Completo." },
             ].map((item, idx) => (
               <div 
@@ -296,7 +296,7 @@ const Index = () => {
         <section className="py-6 mt-4">
           <div className="bg-accent -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
-              🎁 Além das <strong>300 Atividades</strong>, ao adquirir o <br />
+              🎁 Além dos <strong> +80 Arquivos STL Católicos</strong>, ao adquirir o <br />
               Plano Completo você vai levar <strong>4 SUPER BÔNUS!</strong>
             </p>
             
@@ -394,7 +394,7 @@ const Index = () => {
                 <Trophy className="w-3.5 h-3.5" />
                 MELHOR CUSTO-BENEFÍCIO
               </div>
-              <div className="rounded-b-[22px] bg-[#efeeee] p-6 text-center flex flex-col items-center">
+              <div className="rounded-b-[22px] bg-[#f5f1ef] p-6 text-center flex flex-col items-center">
                 <div className="text-xs font-bold uppercase tracking-wider text-black mt-2">Premium</div>
                 
                 <div className="mt-4 mb-2">

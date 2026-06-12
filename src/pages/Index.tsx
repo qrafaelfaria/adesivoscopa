@@ -143,7 +143,7 @@ const Index = () => {
   }, [currentSlide]);
 
   return (
-    <main className="bg-[#f5f1ef] text-foreground">
+    <main className="bg-background text-foreground">
       {/* Top urgency bar */}
       <div className="w-full bg-gradient-urgency text-urgency-foreground text-center text-xs sm:text-sm font-bold py-2 px-3">
         <span className="inline-flex items-center gap-1.5">
@@ -239,7 +239,7 @@ const Index = () => {
                 className="flex gap-4 p-5 bg-white border border-border/60 border-l-4 border-l-primary rounded-2xl shadow-sm"
               >
                 <div className="space-y-1">
-                  <h3 className="font-bold text-black text-lg leading-tight">
+                  <h3 className="font-bold text-foreground text-lg leading-tight">
                     {item.title}
                   </h3>
                 </div>
@@ -279,12 +279,12 @@ const Index = () => {
             ].map((item, idx) => (
               <div 
                 key={idx}
-                className={`flex items-center gap-4 p-4 border border-2 border-black/10 rounded-2xl relative ${item.emoji === "🎁" ? "border-beam" : "bg-white"}`}
+                className={`flex items-center gap-4 p-4 border border-2 border-border/10 rounded-2xl relative ${item.emoji === "🎁" ? "border-beam" : "bg-white"}`}
               >
                 <div className="text-2xl shrink-0 z-10">
                   {item.emoji}
                 </div>
-                <span className="text-[15px] font-semibold text-slate-800 leading-snug z-10">
+                <span className="text-[15px] font-semibold text-foreground leading-snug z-10">
                   {item.text}
                 </span>
               </div>
@@ -362,12 +362,12 @@ const Index = () => {
             <div className="rounded-2xl bg-card border border-border p-6 opacity-90 text-center flex flex-col items-center">
               <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Básico</div>
               <div className="mt-2 flex items-end justify-center gap-2">
-                <span className="text-4xl font-extrabold text-black">R$10,00</span>
+                <span className="text-4xl font-extrabold text-foreground">R$10,00</span>
               </div>
               <ul className="mt-4 space-y-2 text-sm text-left self-start">
                 <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> 300 Atividades Festa Junina</li>
-                <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Atualizações Semanais</li>
-                <li className="flex items-start gap-2"><X className="w-4 h-4 text-red-500 mt-0.5" /> Sem Direito aos Bônus Exclusivos</li>
+                <li className="flex items-start gap-2"><X className="w-4 h-4 text-destructive mt-0.5" /> Sem Atualizações Semanais</li>
+                <li className="flex items-start gap-2"><X className="w-4 h-4 text-destructive mt-0.5" /> Sem Direito aos Bônus Exclusivos</li>
               </ul>
               <button
                 onClick={handleBasicClick}
@@ -376,13 +376,13 @@ const Index = () => {
                 Somente o básico
               </button>
               <div className="mt-8">
-                <p className="text-red-500 font-black text-medium leading-snug uppercase">
+                <p className="text-destructive font-black text-medium leading-snug uppercase">
                   ATENÇÃO: Temos uma <br />
                   opção <span className="underline decoration-2 underline-offset-4">ainda mais VANTAJOSA</span> <br />
                   para você! Veja logo abaixo
                 </p>
                 <div className="mt-2 flex flex-col items-center -space-y-4">
-                  <ChevronsDown className="w-10 h-10 text-red-500 animate-bounce" />
+                  <ChevronsDown className="w-10 h-10 text-destructive animate-bounce" />
                 </div>
               </div>
             </div>
@@ -394,8 +394,8 @@ const Index = () => {
                 <Trophy className="w-3.5 h-3.5" />
                 MELHOR CUSTO-BENEFÍCIO
               </div>
-              <div className="rounded-b-[22px] bg-[#f5f1ef] p-6 text-center flex flex-col items-center">
-                <div className="text-xs font-bold uppercase tracking-wider text-black mt-2">Premium</div>
+              <div className="rounded-b-[22px] bg-background p-6 text-center flex flex-col items-center">
+                <div className="text-xs font-bold uppercase tracking-wider text-foreground mt-2">Premium</div>
                 
                 <div className="mt-4 mb-2">
                   <img 
@@ -409,7 +409,7 @@ const Index = () => {
                   <span className="text-base line-through text-muted-foreground">De R$129</span>
                 </div>
                 <div className="flex items-end justify-center gap-2">
-                  <span className="text-6xl font-extrabold text-black mt-2">R$19,90</span>
+                  <span className="text-6xl font-extrabold text-foreground mt-2">R$19,90</span>
                 </div>
 
                 <div className="mt-2">
@@ -437,7 +437,7 @@ const Index = () => {
                           <Check className="w-3 h-3" />
                         </span>
                       )}
-                      <span className={item.isBonus ? "font-bold text-black" : "text-slate-700"}>
+                      <span className={item.isBonus ? "font-bold text-foreground" : "text-muted-foreground"}>
                         {item.isBonus ? `Bônus ${item.bonusNum} - ` : ""}{item.text}
                       </span>
                     </li>
@@ -470,7 +470,7 @@ const Index = () => {
               className="w-32 h-32 object-contain animate-float"
             />
             <div>
-              <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-black mb-4`}>
+              <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-foreground mb-4`}>
                 Garantia de Satisfação Total
               </h2>
               <div className="space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">

@@ -368,9 +368,9 @@ const Index = () => {
                 <span className="text-4xl font-extrabold text-foreground">R$10,00</span>
               </div>
               <ul className="mt-4 space-y-2 text-sm text-left self-start">
-                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> 300 Atividades Festa Junina</li>
-                <li className="flex items-start gap-2"><X className="w-4 h-4 text-destructive mt-0.5" /> Sem Atualizações Semanais</li>
-                <li className="flex items-start gap-2"><X className="w-4 h-4 text-destructive mt-0.5" /> Sem Direito aos Bônus Exclusivos</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> 36 Mapas Mentais das Cartas do Baralho Cigano</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-muted-foreground mt-0.5" /> Material em PDF para acessar e estudar</li>
+                <li className="flex items-start gap-2"><X className="w-4 h-4 text-destructive mt-0.5" /> Não inclui os bônus do Plano Completo</li>
               </ul>
               <button
                 onClick={handleBasicClick}
@@ -397,7 +397,7 @@ const Index = () => {
                 <Trophy className="w-3.5 h-3.5" />
                 MELHOR CUSTO-BENEFÍCIO
               </div>
-              <div className="rounded-b-[22px] bg-background p-6 text-center flex flex-col items-center">
+              <div className="rounded-b-[22px] bg-card p-6 text-center flex flex-col items-center">
                 <div className="text-xs font-bold uppercase tracking-wider text-foreground mt-2">Premium</div>
                 
                 <div className="mt-4 mb-2">
@@ -422,13 +422,14 @@ const Index = () => {
 
                 <ul className="mt-5 space-y-2.5 text-medium text-left self-start">
                   {[
-                    { text: "300 Atividades Festa Junina (7 apostilas)", isBonus: false },
-                    { text: "Material Pronto para imprimir em tamanhos reais", isBonus: false },
-                    { text: "Conteúdo organizado por temas", isBonus: false },
-                    { text: "Kit Painel Decorativo Festa Junina", isBonus: true, bonusNum: 1 },
-                    { text: "Kit Decoração Divertida Festa Junina", isBonus: true, bonusNum: 2 },
-                    { text: "Kit Brincadeiras Tradicionais Festa Junina", isBonus: true, bonusNum: 3 },
-                    { text: "Atualizações Semanais", isBonus: true, bonusNum: 4 },
+                    { text: "36 Mapas Mentais das Cartas do Baralho Cigano", isBonus: false },
+                    { text: "Material em PDF para acessar e estudar", isBonus: false },
+                    { text: "Cartas e seus significados explicados de forma simples.", isBonus: false },
+                    { text: "Guia de Combinações", isBonus: true, bonusNum: 1 },
+                    { text: "Modelos de Tiragens", isBonus: true, bonusNum: 2 },
+                    { text: "Guia das Polaridades das Cartas", isBonus: true, bonusNum: 3 },
+                    { text: "Envio imediato por e-mail (PDF pronto para imprimir)", isBonus: false, },
+                    { text: "Acesso vitalício ao material", isBonus: false, },
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       {item.isBonus ? (

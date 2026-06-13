@@ -256,7 +256,7 @@ const Index = () => {
         {/* WHAT'S INSIDE SECTION */}
         <section className="pt-6 border-t border-border">
           <div className="text-center mb-5 px-4">
-            <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-primary mb-1`}>
+            <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-foreground mb-1`}>
               Tudo que está dentro do Material
             </h2>
           </div>
@@ -274,12 +274,14 @@ const Index = () => {
         <section className="mt-4">
           <div className="space-y-3">
             {[
-              { emoji: "✅", text: "Mais de 80 modelos católicos em STL prontos para imprimir e vender." },
-              { emoji: "✅", text: "Modelos variados de santos, crucifixos e peças religiosas." },
-              { emoji: "✅", text: "Material pronto para imprimir." },
-              { emoji: "✅", text: "Modelos detalhados para garantir um bom acabamento." },
-              { emoji: "✅", text: "Produtos ideais para vendas online e encomendas." },
-              { emoji: "✅", text: "Material organizado por temas para facilitar o planejamento no dia a dia." },
+              { emoji: "✅", text: "36 Mapas mentais prontos das cartas do baralho cigano." },
+              { emoji: "✅", text: "Significado explicado de forma simples." },
+              { emoji: "✅", text: "Palavras-chave, pontos positivos e desafios." },
+              { emoji: "✅", text: "Significado geral e conselho." },
+              { emoji: "✅", text: "Interpretação no amor." },
+              { emoji: "✅", text: "Interpretação no financeiro." },
+              { emoji: "✅", text: "Interpretação na espiritualidade." },
+              { emoji: "✅", text: "Material em PDF para acessar, estudar e imprimir." },
               { emoji: "🎁", text: "Bônus exclusivos no Plano Completo." },
             ].map((item, idx) => (
               <div 

@@ -357,7 +357,7 @@ const Index = () => {
         {/* PRICING */}
         <section id="checkout" className="py-10 border-t border-border">
           <h2 className={`${HeadlineFont} text-4xl sm:text-6xl text-center text-foreground`}>
-            Aproveite Enquanto o Plano Completo está em Promoção!
+            Aproveite Enquanto o <span className="text-destructive underline decoration-2">Plano Completo</span> está em Promoção!
           </h2>
           <div className="mt-6 space-y-5">
 

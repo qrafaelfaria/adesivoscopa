@@ -8,31 +8,17 @@ import tshirt3 from "@/assets/03.png";
 import tshirt4 from "@/assets/04.png";
 import tshirt5 from "@/assets/05.png";
 import tshirt6 from "@/assets/06.png";
-import tshirt7 from "@/assets/07.png";
-import tshirt8 from "@/assets/08.png";
-import tshirt9 from "@/assets/09.png";
-import tshirt10 from "@/assets/10.png";
-import tshirt11 from "@/assets/11.png";
-import tshirt12 from "@/assets/12.png";
 
 import HeroCopa from "@/assets/HeroCigano.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
-import AtividadeImage from "@/assets/Decoracao.png";
-import AvaliacaoImage from "@/assets/Avaliacao.png";
-import CuriosidadeImage from "@/assets/Curiosidade.png";
-import DinamicaImage from "@/assets/Dinamica.png";
-import Feedback01 from "@/assets/Relatu01.png";
-import Feedback02 from "@/assets/Relatu02.png";
-import Feedback03 from "@/assets/Relato04.png";
+import Feedback01 from "@/assets/Feedback01.png";
+import Feedback02 from "@/assets/Feedback02.png";
+import Feedback03 from "@/assets/Feedback03.png";
 import GarantiaImage from "@/assets/Garantia.webp";
-import GuiaBonus from "@/assets/Painel.png";
-import MockupBonus from "@/assets/Bingo.png";
-import NomesBonus from "@/assets/Cardapio.png";
-import BarBonus from "@/assets/BarBonus.png";
-import InfantilBonus from "@/assets/InfantilBonus.png";
-import FemBonus from "@/assets/FemBonus.png";
-import OneBonus from "@/assets/100Bonus.png";
+import Bonus01 from "@/assets/GuiaBonus.png";
+import Bonus02 from "@/assets/PolarBonus.png";
+import Bonus03 from "@/assets/TiragensBonus.png";
 
 const CHECKOUT_URL = "#checkout";
 const PREMIUM_CHECKOUT_URL = "https://pay.wiapy.com/ulk84ywIP_";
@@ -79,21 +65,21 @@ const bonuses = [
     title: "Guia de Combinações",
     desc: "Veja como as cartas se combinam entre si e o significado que cada junção assume na leitura.",
     old: "R$9,90",
-    imageSrc: GuiaBonus,
+    imageSrc: Bonus01,
     isBonus: true,
   },
   {
     title: "Modelos de Tiragens",
     desc: "Receba modelos prontos de tiragens com o passo a passo de como dispor e interpretar cada carta em cada posição.",
     old: "R$14,90",
-    imageSrc: AtividadeImage,
+    imageSrc: Bonus03,
     isBonus: true,
   },
   {
     title: "Guia das Polaridades das Cartas",
     desc: "Descubra quais cartas são positivas, negativas e neutras — e como isso muda completamente a leitura das combinações.",
     old: "R$24,90",
-    imageSrc: MockupBonus,
+    imageSrc: Bonus02,
     isBonus: true,
   },
 ];
@@ -351,7 +337,7 @@ const Index = () => {
 
 {/* TESTIMONIALS CAROUSEL */}
         <section className="py-10 border-t border-border">
-          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-primary`}>
+          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-foreground`}>
             Depoimentos de Quem Já Usou
           </h2>
           <p className="mt-2 text-sm text-muted-foreground text-center">Deslize para o lado pra ver mais</p>
@@ -370,8 +356,8 @@ const Index = () => {
 
         {/* PRICING */}
         <section id="checkout" className="py-10 border-t border-border">
-          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-primary`}>
-            Garanta o seu Acesso
+          <h2 className={`${HeadlineFont} text-4xl sm:text-6xl text-center text-foreground`}>
+            Aproveite Enquanto o Plano Completo está em Promoção!
           </h2>
           <div className="mt-6 space-y-5">
 

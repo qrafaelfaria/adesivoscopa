@@ -297,6 +297,16 @@ const Index = () => {
               </div>
             ))}
           </div>
+          
+          {/* Additional Info */}
+          <div className="mt-8 space-y-2 text-center">
+            <p className="text-[15px] font-semibold text-foreground flex items-center justify-center gap-2">
+              Você recebe tudo na hora, direto no seu e-mail. 📧
+            </p>
+            <p className="text-[15px] font-semibold text-foreground flex items-center justify-center gap-2">
+              É só imprimir e usar.
+            </p>
+          </div>
         </section>
 
         {/* BONUSES */}

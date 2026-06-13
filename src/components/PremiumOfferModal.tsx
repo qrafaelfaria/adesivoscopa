@@ -46,16 +46,15 @@ const PremiumOfferModal: React.FC<PremiumOfferModalProps> = ({
             <div className="flex items-center gap-2 justify-center mb-4">
               <span className="text-xl">🎁</span>
               <span className="text-primary font-black text-sm sm:text-base uppercase tracking-tight">
-                + 4 BÔNUS EXCLUSIVOS
+                + 3 BÔNUS EXCLUSIVOS
               </span>
             </div>
             
             <ul className="space-y-2.5 text-left">
               {[
-                "Bônus 1 - Kit Painel Decorativo Festa Junina",
-                "Bônus 2 - Kit Decoração Divertida Festa Junina",
-                "Bônus 3 - Kit Brincadeiras Tradicionais Festa Junina",
-                "Bônus 4 - Atualizações Semanais",
+                "Bônus 1 - Guia de Combinações",
+                "Bônus 2 - Modelos de Tiragens",
+                "Bônus 3 - Guia das Polaridades das Cartas",
               ].map((bonus, idx) => (
                 <li key={idx} className="flex items-center gap-2.5">
                   <div className="flex-shrink-0 w-5 h-5 rounded-md bg-success flex items-center justify-center">
@@ -73,16 +72,16 @@ const PremiumOfferModal: React.FC<PremiumOfferModalProps> = ({
           <div className="flex flex-col items-center mb-8">
             <div className="flex items-center gap-1.5 mb-1">
               <span className="text-accent text-sm sm:text-base font-bold">de</span>
-              <span className="text-accent text-sm sm:text-base font-bold line-through">R$ 19,90</span>
+              <span className="text-accent text-sm sm:text-base font-bold line-through">R$ 27,00</span>
               <span className="text-accent text-sm sm:text-base font-bold">por apenas</span>
             </div>
             
             <div className="text-[52px] sm:text-[64px] font-black text-success leading-none mb-2">
-              R$ 14,90
+              R$ 19,90
             </div>
 
             <div className="text-muted-foreground font-bold text-[11px] sm:text-[13px] uppercase tracking-widest">
-              OU 3X DE R$ 5,41 NO CARTÃO*
+              OU 3x de R$ 7,23 NO CARTÃO*
             </div>
           </div>
 

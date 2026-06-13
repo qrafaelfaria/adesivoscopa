@@ -412,11 +412,11 @@ const Index = () => {
                   <span className="text-base line-through text-muted-foreground">De R$129</span>
                 </div>
                 <div className="flex items-end justify-center gap-2">
-                  <span className="text-6xl font-extrabold text-foreground mt-2">R$19,90</span>
+                  <span className="text-6xl font-extrabold text-foreground mt-2">R$27,00</span>
                 </div>
 
                 <div className="mt-2">
-                  <span className="text-xl text-foreground/80">ou 3x de R$ 7,23</span>
+                  <span className="text-xl text-foreground/80">ou 3x de R$ 9,81</span>
                   <p className="text-sm text-muted-foreground italic mt-0.5">Pagamento único, sem mensalidades.</p>
                 </div>
 

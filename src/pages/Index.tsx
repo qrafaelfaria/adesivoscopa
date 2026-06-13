@@ -76,23 +76,23 @@ const tshirts = [
 
 const bonuses = [
   {
-    title: "Kit Painel Decorativo Festa Junina",
-    desc: "Receba modelos de painéis prontos para imprimir e montar na sua escola. Ideal para criar cenários temáticos para fotos, apresentações e decoração da festa.",
-    old: "R$19,90",
+    title: "Guia de Combinações",
+    desc: "Veja como as cartas se combinam entre si e o significado que cada junção assume na leitura.",
+    old: "R$9,90",
     imageSrc: GuiaBonus,
     isBonus: true,
   },
   {
-    title: "Kit Decoração Divertida Festa Junina",
-    desc: "Bandeirinhas, elementos decorativos, personagens temáticos e enfeites prontos para transformar qualquer ambiente em uma verdadeira Festa Junina.",
-    old: "R$19,90",
+    title: "Modelos de Tiragens",
+    desc: "Receba modelos prontos de tiragens com o passo a passo de como dispor e interpretar cada carta em cada posição.",
+    old: "R$14,90",
     imageSrc: AtividadeImage,
     isBonus: true,
   },
   {
-    title: "Kit Brincadeiras Tradicionais Festa Junina",
-    desc: "Materiais prontos para organizar atividades clássicas como pescaria, correio elegante, boca do palhaço, jogo das argolas e outras brincadeiras que fazem sucesso com os alunos.",
-    old: "R$27",
+    title: "Guia das Polaridades das Cartas",
+    desc: "Descubra quais cartas são positivas, negativas e neutras — e como isso muda completamente a leitura das combinações.",
+    old: "R$24,90",
     imageSrc: MockupBonus,
     isBonus: true,
   },
@@ -313,8 +313,8 @@ const Index = () => {
         <section className="py-6 mt-4">
           <div className="bg-accent -mx-4 px-6 py-10 mb-8 text-center text-white">
             <p className="text-lg sm:text-xl font-medium leading-tight mb-6">
-              🎁 Além dos <strong> +80 Arquivos STL Católicos</strong>, ao adquirir o <br />
-              Plano Completo você vai levar <strong>4 SUPER BÔNUS!</strong>
+              🎁 Além dos <strong> 36 Mapas Mentais das Cartas do Baralho Cigano</strong>, ao adquirir o <br />
+              Plano Completo você vai levar <strong>3 SUPER BÔNUS!</strong>
             </p>
             
             <p className="text-gold text-lg sm:text-xl font-bold italic underline mb-4">

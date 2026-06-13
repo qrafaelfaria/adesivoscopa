@@ -15,7 +15,7 @@ import tshirt10 from "@/assets/10.png";
 import tshirt11 from "@/assets/11.png";
 import tshirt12 from "@/assets/12.png";
 
-import HeroCopa from "@/assets/STLHero.png";
+import HeroCopa from "@/assets/HeroCigano.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
 import AtividadeImage from "@/assets/Decoracao.png";
@@ -168,7 +168,7 @@ const Index = () => {
             <br />
           </h1>
 
-          <div className="mt-6 mb-8">
+          <div className="mt-6 mb-4">
             <img 
               src={HeroCopa} 
               alt="Atividades Festa Junina" 
@@ -183,9 +183,9 @@ const Index = () => {
             {/* Decorative notch */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-2 bg-foreground/80 rounded-full"></div>
 
-            <div className="space-y-6 text-lg sm:text-base text-black/90 leading-relaxed">
-              <p className="font-bold text-lg sm:text-lg">
-               Aprenda a ler e interpretar todas as 36 do Baralho Cigano de forma simples, visual e organizada.
+            <div className="space-y-6 text-lg sm:text-base text-black/70 leading-relaxed">
+              <p className="font-medium text-lg sm:text-lg">
+               Aprenda a ler e interpretar todas as 36 Cartas do Baralho Cigano de forma Simples, Visual e Organizada.
               </p>
             </div>
           </div>

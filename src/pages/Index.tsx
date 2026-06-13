@@ -2,14 +2,19 @@ import { useEffect, useMemo, useState, useRef } from "react";
 import { Play, Check, X, ChevronDown, ChevronsDown, Flame, Clock, ShieldCheck, Zap, BookOpen, Trophy, Crown, Library, Dices, Palette, Type, CheckSquare, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import tshirt1 from "@/assets/Atividade01.png";
-import tshirt2 from "@/assets/Atividade02.png";
-import tshirt3 from "@/assets/Atividade03.png";
-import tshirt4 from "@/assets/Atividade04.png";
-import tshirt5 from "@/assets/Atividade05.png";
-import tshirt13 from "@/assets/Atividade06.png";
-import tshirt14 from "@/assets/Placa07.png";
-import tshirt15 from "@/assets/Placa08.png";
+import tshirt1 from "@/assets/01.png";
+import tshirt2 from "@/assets/02.png";
+import tshirt3 from "@/assets/03.png";
+import tshirt4 from "@/assets/04.png";
+import tshirt5 from "@/assets/05.png";
+import tshirt6 from "@/assets/06.png";
+import tshirt7 from "@/assets/07.png";
+import tshirt8 from "@/assets/08.png";
+import tshirt9 from "@/assets/09.png";
+import tshirt10 from "@/assets/10.png";
+import tshirt11 from "@/assets/11.png";
+import tshirt12 from "@/assets/12.png";
+
 import HeroCopa from "@/assets/STLHero.png";
 import BonusCard from "@/components/BonusCard";
 import PremiumOfferModal from "@/components/PremiumOfferModal";
@@ -64,7 +69,7 @@ const tshirts = [
   { src: tshirt3, alt: "Estampa Salmo 23" },
   { src: tshirt4, alt: "Estampa Filhos de Deus" },
   { src: tshirt5, alt: "Estampa Cristo é Rei" },
-  { src: tshirt13, alt: "Estampa Cristo é Rei" },
+  { src: tshirt6, alt: "Estampa Cristo é Rei" },
 ];
 
 
@@ -159,7 +164,7 @@ const Index = () => {
           </div>
 
           <h1 className={`${HeadlineFont} text-[44px] sm:text-5xl text-primary`}>
-            <span className="text-foreground">+80 Arquivos STL Católicos</span> Prontos para Imprimir e Vender
+            <span className="text-foreground">36 Cartas do Baralho Cigano</span> em Mapas Mentais
             <br />
           </h1>
 
@@ -176,15 +181,11 @@ const Index = () => {
         <section className="py-6">
           <div className="relative rounded-[2rem] bg-success/5 border border-border p-8 sm:p-10 text-center">
             {/* Decorative notch */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-2 bg-success/80 rounded-full"></div>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-2 bg-foreground/80 rounded-full"></div>
 
-            <div className="space-y-6 text-lg sm:text-base text-foreground/90 leading-relaxed">
-              <p>
-               Um material completo mais de 80 modelos católicos em STL prontos para imprimir e vender.
-              </p>
-              
+            <div className="space-y-6 text-lg sm:text-base text-black/90 leading-relaxed">
               <p className="font-bold text-lg sm:text-lg">
-               Santos, crucifixos, terços e muito mais...
+               Aprenda a ler e interpretar todas as 36 do Baralho Cigano de forma simples, visual e organizada.
               </p>
             </div>
           </div>
@@ -200,16 +201,16 @@ const Index = () => {
 
         {/* T-SHIRTS */}
         <section className="py-6 border-t border-border">
-          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-primary`}>
-            Veja algumas das artes que você vai encontrar
+          <h2 className={`${HeadlineFont} text-3xl sm:text-4xl text-center text-foreground`}>
+            Veja alguns dos mapas mentais que você vai receber
           </h2>
           <p className="mt-2 text-sm text-muted-foreground text-center">Deslize para o lado pra ver mais</p>
 
-          <div ref={carouselRef} className="mt-5 -mx-4 px-4 flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
+          <div ref={carouselRef} className="mt-4 -mx-4 px-4 flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
             {tshirts.map((t, index) => (
               <div
                 key={`${t.alt}-${index}`}
-                className="snap-center shrink-0 w-[85%] aspect-[3/4] rounded-2xl overflow-hidden bg-white border border-border shadow-card-dark"
+                className="snap-center shrink-0 w-[100%] aspect-[16/9] rounded-2xl overflow-hidden"
               >
                 <img src={t.src} alt={t.alt} loading="lazy" className="w-full h-full object-contain block" />
               </div>
@@ -223,15 +224,19 @@ const Index = () => {
             {[
               { 
                 icon: "💰", 
-                title: "Material Pronto para imprimir em A4", 
+                title: "Material Pronto para imprimir em A4.", 
               },
               { 
                 icon: "✂️", 
-                title: "Do ensino Infantil até o Ensino Fundamental I",
+                title: "Cartas e seus significados explicados de forma simples.",
               },
               { 
                 icon: "✏️", 
-                title: "Visual encantador",
+                title: "Material visual, bonito e fácil de entender.",
+              },
+              { 
+                icon: "✅", 
+                title: "Ideal para estudos.",
               },
             ].map((item, idx) => (
               <div 
